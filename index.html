@@ -1,5 +1,4 @@
-!DOCTYPE HTML>
-
+<!DOCTYPE HTML>
 
 <html>
 
@@ -9,6 +8,80 @@
 	</head>
 
 	<body> 
-        <h1 id= "title"> Austin City Survey Form</h1>
+		<h1 id= "title"> Austin City Survey Form</h1>
+		<p id="description">
+			Thank you for taking the time to help us improve our City
+			 </p>
+
+		<form id="survey-form">
+			<div>
+			<label id="name-label">Name</label>
+			 	<input id="name" type="text" placeholder="Enter your name" required>
+			 	</label><br><br>
+			<label id="email-label">Email</label>
+				<input id="email" type="email" placeholder="Enter your email"  
+				required> 
+				</label><br><br>
+			<label id="number-label">Number</label>
+				<input id="number" type="number" placeholder="Age" required min="1" max="150" >
+				</label><br><br>
+			</div>
+			
+			<div>What option best describes you<br>
+				<select id=status>
+					<option value= "student">Student<option>
+					<option value= "visitor">Visitor<option>
+					<option value= "resident">Resident<option>
+					<option value= "home-owner">Home-owner<option>
+					</select>
+			</div>
+		
+			<div>Would you recommend others to:<br>
+				<section>
+				<input value="visit-austin" type="radio" name="visit-live">Visit Austin
+			
+					<input value="live-in-austin" type="radio" name="visit-live">Live in Austin
+					
+						<input value="neither" type="radio" name="visit-live">Neither
+				</section>
+			</div>
+				
+
+			<div>What do you like most about Austin?<br>
+				<section>
+				<label for="music">
+				<input value="music" type="checkbox" name="favourite">The Music
+				</label>
+				<label for="food">
+				<input value="food" type="checkbox" name="favourite">The Food
+				</label>
+				<label for="scenery">
+				<input value="scenery" type="checkbox" name="favourite">The Scenery
+					</label>
+				<label for="the-people">
+				<input value="the-people" type="checkbox" name="favourite">The People
+					</label>
+				</section>
+			</div>
+			<div>
+				In a few words. What do you hate most about Austin?<br>
+				<textarea></textarea>
+			</div>
+			
+			<div>Which other city would you live in?<br>
+				<select id="dropdown" name="cities">
+					<option value="dallas">Dallas</option>
+					<option value="la">LA</option>
+					<option value="colorado">Colarado</option>
+					<option value="other">Other</option>
+					</select>
+			</div>
+			<p><strong>Comments:</strong></p>
+					<textarea name="comments" placeholder="Additional comments" value="comments" rows="5"cols="50"></textarea><br><br>
+		
+
+				<input type="submit" id="submit" height:30px>
+		</form>
+		
     </body>
 </html>
